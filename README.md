@@ -49,22 +49,6 @@ jwks:
 frontend:
   dashboardUrl:
     pathname: /api/v1/namespaces/kube-system/services/kubernetes-dashboard/proxy/
-  kubernetesVersions:
-  - 1.8.4
-  - 1.7.9
-  cloudProviders:
-    aws:
-      volumeTypes:
-      - gp2
-      machineTypes:
-      - m4.large
-      - m4.xlarge
-    openstack:
-      volumeTypes:
-      - default
-      machineTypes:
-      - medium_2_4
-      - medium_4_8
   oidc:
     authority: *issuer
     client_id: gardener
